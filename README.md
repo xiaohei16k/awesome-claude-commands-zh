@@ -2,13 +2,13 @@
 
 ![Claude Code 命令大全 中文](https://claude.aiso.cool/api/og?type=home)
 
-![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-66%2F102-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--06--18-blue) ![排队复核](https://img.shields.io/badge/%E6%8E%92%E9%98%9F%E5%A4%8D%E6%A0%B8-36-yellow)
+![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-86%2F102-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--06--18-blue) ![排队复核](https://img.shields.io/badge/%E6%8E%92%E9%98%9F%E5%A4%8D%E6%A0%B8-16-yellow)
 
-> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步,trust 数据(`66/102` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
+> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步,trust 数据(`86/102` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
 
 本仓库整理 Claude Code 全部 slash 命令、CLI 子命令、Hook 事件、启动参数,所有内容来自深度核查项目 [claude.aiso.cool](https://claude.aiso.cool) — 每条命令带交叉核查 verdict、官方文档来源,且统一锚定到同一个 Claude Code 版本。
 
-当前收录 **227** 个命令,其中 **66** 个已完成 LLM 二阶段交叉核查(对照 docs.claude.com 官方源),通过率 **100%**。
+当前收录 **227** 个命令,其中 **86** 个已完成 LLM 二阶段交叉核查(对照 docs.claude.com 官方源),通过率 **100%**。
 
 ---
 
@@ -110,29 +110,29 @@
 | `/security-review` | 分析待处理变更的安全漏洞风险 | 🟡 轻微 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-security-review) |
 | `/settings` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-settings) |
 | `/setup-bedrock` | 配置 Amazon Bedrock 认证和模型 | 🟢 通过 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-setup-bedrock) |
-| `/setup-vertex` | 配置 Google Vertex AI 认证和模型 | ⏳ 排队复核 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-setup-vertex) |
+| `/setup-vertex` | 配置 Google Vertex AI 认证和模型 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-setup-vertex) |
 | `/simplify` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-simplify) |
-| `/skills` | 列出可用 skills 和隐藏不需要的 | ⏳ 排队复核 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-skills) |
-| `/stats` | 打开统计标签显示使用情况 | ⏳ 排队复核 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-stats) |
-| `/status` | 打开设置界面显示版本模型和连接 | ⏳ 排队复核 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-status) |
-| `/statusline` | 配置 Claude Code 的状态行显示信息 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-statusline) |
+| `/skills` | 列出可用 skills 和隐藏不需要的 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-skills) |
+| `/stats` | 打开统计标签显示使用情况 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-stats) |
+| `/status` | 打开设置界面显示版本模型和连接 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-status) |
+| `/statusline` | 配置 Claude Code 的状态行显示信息 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-statusline) |
 | `/t` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-t) |
-| `/tasks` | 列出和管理后台任务及相关信息 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-tasks) |
-| `/team-onboarding` | 从使用历史生成团队入门指南 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-team-onboarding) |
-| `/teleport` | 从网页版Claude Code拉入当前终端 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-teleport) |
-| `/terminal-setup` | 配置Shift+Enter等终端快捷键 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-terminal-setup) |
-| `/theme` | 更改终端配色主题和样式 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-theme) |
+| `/tasks` | 列出和管理后台任务及相关信息 | 🟠 重大 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-tasks) |
+| `/team-onboarding` | 从使用历史生成团队入门指南 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-team-onboarding) |
+| `/teleport` | 从网页版Claude Code拉入当前终端 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-teleport) |
+| `/terminal-setup` | 配置Shift+Enter等终端快捷键 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-terminal-setup) |
+| `/theme` | 更改终端配色主题和样式 | 🟠 重大 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-theme) |
 | `/todos` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-todos) |
-| `/tui` | 设置终端UI渲染器并重启会话 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-tui) |
-| `/ultraplan` | 在ultraplan会话中草稿计划 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-ultraplan) |
-| `/ultrareview` | 运行深层多agent代码审查 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-ultrareview) |
+| `/tui` | 设置终端UI渲染器并重启会话 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-tui) |
+| `/ultraplan` | 在ultraplan会话中草稿计划 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-ultraplan) |
+| `/ultrareview` | 运行深层多agent代码审查 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-ultrareview) |
 | `/undo` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-undo) |
 | `/update` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-update) |
-| `/upgrade` | 打开升级页面切换计划等级 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-upgrade) |
-| `/usage` | 显示会话成本和订阅使用统计 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-usage) |
-| `/usage-credits` | 配置usage credits在限制后继续工作 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-usage-credits) |
-| `/voice` | 开启或配置语音听写模式 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-voice) |
-| `/web-setup` | 连接GitHub账户以使用网页版功能 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-web-setup) |
+| `/upgrade` | 打开升级页面切换计划等级 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-upgrade) |
+| `/usage` | 显示会话成本和订阅使用统计 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-usage) |
+| `/usage-credits` | 配置usage credits在限制后继续工作 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-usage-credits) |
+| `/voice` | 开启或配置语音听写模式 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-voice) |
+| `/web-setup` | 连接GitHub账户以使用网页版功能 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-web-setup) |
 | `/workflows` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-workflows) |
 
 → [在线版 + 筛选 / 搜索](https://claude.aiso.cool/commands?kind=slash)
@@ -146,18 +146,18 @@
 
 | 命令 | 简介 | 核查结论 | 锚定版本 | 详情 |
 | --- | --- | --- | --- | --- |
-| `claude agents` | 打开 Agent 视图监控并发送后台会话 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/cli-agents) |
+| `claude agents` | 打开 Agent 视图监控并发送后台会话 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-agents) |
 | `claude auth` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-auth) |
-| `claude auth login` | 登录 Anthropic 账户 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/cli-auth-login) |
-| `claude auth logout` | 从 Anthropic 账户登出 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/cli-auth-logout) |
-| `claude auth status` | 显示身份认证状态为 JSON | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/cli-auth-status) |
+| `claude auth login` | 登录 Anthropic 账户 | 🟠 重大 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-auth-login) |
+| `claude auth logout` | 从 Anthropic 账户登出 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-auth-logout) |
+| `claude auth status` | 显示身份认证状态为 JSON | 🟠 重大 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-auth-status) |
 | `claude config` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-config) |
-| `claude daemon status` | 打印后台会话主管的状态 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/cli-daemon-status) |
+| `claude daemon status` | 打印后台会话主管的状态 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-daemon-status) |
 | `claude doctor` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-doctor) |
 | `claude --help` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-help) |
-| `claude install` | 安装或重新安装本地二进制文件 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/cli-install) |
-| `claude logs` | 打印后台会话的最近输出 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/cli-logs) |
-| `claude mcp` | 配置 MCP 服务器 | ⏳ 排队复核 | v2.1.178 | [查看](https://claude.aiso.cool/commands/cli-mcp) |
+| `claude install` | 安装或重新安装本地二进制文件 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-install) |
+| `claude logs` | 打印后台会话的最近输出 | 🟠 重大 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-logs) |
+| `claude mcp` | 配置 MCP 服务器 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-mcp) |
 | `claude mcp add` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-mcp-add) |
 | `claude mcp add-from-claude-desktop` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-mcp-add-from-claude-desktop) |
 | `claude mcp add-json` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-mcp-add-json) |
