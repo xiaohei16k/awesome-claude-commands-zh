@@ -2,13 +2,13 @@
 
 ![Claude Code 命令大全 中文](https://claude.aiso.cool/api/og?type=home)
 
-![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-65%2F102-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--06--18-blue) ![排队复核](https://img.shields.io/badge/%E6%8E%92%E9%98%9F%E5%A4%8D%E6%A0%B8-37-yellow)
+![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-66%2F102-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--06--18-blue) ![排队复核](https://img.shields.io/badge/%E6%8E%92%E9%98%9F%E5%A4%8D%E6%A0%B8-36-yellow)
 
-> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步,trust 数据(`65/102` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
+> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步,trust 数据(`66/102` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
 
 本仓库整理 Claude Code 全部 slash 命令、CLI 子命令、Hook 事件、启动参数,所有内容来自深度核查项目 [claude.aiso.cool](https://claude.aiso.cool) — 每条命令带交叉核查 verdict、官方文档来源,且统一锚定到同一个 Claude Code 版本。
 
-当前收录 **227** 个命令,其中 **65** 个已完成 LLM 二阶段交叉核查(对照 docs.claude.com 官方源),通过率 **100%**。
+当前收录 **227** 个命令,其中 **66** 个已完成 LLM 二阶段交叉核查(对照 docs.claude.com 官方源),通过率 **100%**。
 
 ---
 
@@ -38,7 +38,7 @@
 | `/background` | 将当前会话后台运行并释放当前终端 | 🟡 轻微 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-background) |
 | `/batch` | 并行编排大规模代码库变更和提交 | 🟡 轻微 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-batch) |
 | `/bg` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-bg) |
-| `/branch` | 在当前位置创建对话分支以保留原始会话 | ⏳ 排队复核 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-branch) |
+| `/branch` | 在当前位置创建对话分支以保留原始会话 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-branch) |
 | `/btw` | 提出快速旁问而不添加到对话 | 🟡 轻微 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-btw) |
 | `/buddy` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-buddy) |
 | `/bug` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-bug) |
@@ -64,7 +64,7 @@
 | `/export` | 将当前对话导出为纯文本格式或保存文件 | 🟢 通过 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-export) |
 | `/extra-usage` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-extra-usage) |
 | `/fast` | 切换快速模式的开启或关闭状态 | 🟡 轻微 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-fast) |
-| `/feedback` | 提交反馈、报告错误或分享对话 | ⏳ 排队复核 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-feedback) |
+| `/feedback` | 提交反馈、报告错误或分享对话 | 🟠 重大 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-feedback) |
 | `/focus` | 切换焦点视图仅显示最后提示和工具摘要 | 🟡 轻微 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-focus) |
 | `/fork` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-fork) |
 | `/goal` | 设置目标使Claude持续工作直到条件满足 | 🟢 通过 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-goal) |
