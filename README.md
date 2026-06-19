@@ -2,13 +2,13 @@
 
 ![Claude Code 命令大全 中文](https://claude.aiso.cool/api/og?type=home)
 
-![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-96%2F102-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--06--19-blue) ![排队复核](https://img.shields.io/badge/%E6%8E%92%E9%98%9F%E5%A4%8D%E6%A0%B8-6-yellow)
+![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-102%2F102-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--06--19-blue)
 
-> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步,trust 数据(`96/102` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
+> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步,trust 数据(`102/102` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
 
 本仓库整理 Claude Code 全部 slash 命令、CLI 子命令、Hook 事件、启动参数,所有内容来自深度核查项目 [claude.aiso.cool](https://claude.aiso.cool) — 每条命令带交叉核查 verdict、官方文档来源,且统一锚定到同一个 Claude Code 版本。
 
-当前收录 **227** 个命令,其中 **96** 个已完成 LLM 二阶段交叉核查(对照 docs.claude.com 官方源),通过率 **100%**。
+当前收录 **227** 个命令,其中 **102** 个已完成 LLM 二阶段交叉核查(对照 docs.claude.com 官方源),通过率 **100%**。
 
 ---
 
@@ -38,7 +38,7 @@
 | `/background` | 将当前会话后台运行并释放当前终端 | 🟡 轻微 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-background) |
 | `/batch` | 并行编排大规模代码库变更和提交 | 🟡 轻微 | v2.1.179 | [查看](https://claude.aiso.cool/commands/slash-batch) |
 | `/bg` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-bg) |
-| `/branch` | 在当前位置创建对话分支以保留原始会话 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-branch) |
+| `/branch` | 在当前位置创建对话分支以保留原始会话 | 🟡 轻微 | v2.1.183 | [查看](https://claude.aiso.cool/commands/slash-branch) |
 | `/btw` | 提出快速旁问而不添加到对话 | 🟡 轻微 | v2.1.178 | [查看](https://claude.aiso.cool/commands/slash-btw) |
 | `/buddy` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-buddy) |
 | `/bug` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-bug) |
@@ -113,7 +113,7 @@
 | `/setup-vertex` | 配置 Google Vertex AI 认证和模型 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-setup-vertex) |
 | `/simplify` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-simplify) |
 | `/skills` | 列出可用 skills 和隐藏不需要的 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-skills) |
-| `/stats` | 打开统计标签显示使用情况 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-stats) |
+| `/stats` | 打开统计标签显示使用情况 | 🟡 轻微 | v2.1.183 | [查看](https://claude.aiso.cool/commands/slash-stats) |
 | `/status` | 打开设置界面显示版本模型和连接 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-status) |
 | `/statusline` | 配置 Claude Code 的状态行显示信息 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-statusline) |
 | `/t` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-t) |
@@ -129,9 +129,9 @@
 | `/undo` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-undo) |
 | `/update` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-update) |
 | `/upgrade` | 打开升级页面切换计划等级 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-upgrade) |
-| `/usage` | 显示会话成本和订阅使用统计 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-usage) |
+| `/usage` | 显示会话成本和订阅使用统计 | 🟡 轻微 | v2.1.183 | [查看](https://claude.aiso.cool/commands/slash-usage) |
 | `/usage-credits` | 配置usage credits在限制后继续工作 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-usage-credits) |
-| `/voice` | 开启或配置语音听写模式 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-voice) |
+| `/voice` | 开启或配置语音听写模式 | 🟡 轻微 | v2.1.183 | [查看](https://claude.aiso.cool/commands/slash-voice) |
 | `/web-setup` | 连接GitHub账户以使用网页版功能 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/slash-web-setup) |
 | `/workflows` | — | — | — | [查看](https://claude.aiso.cool/commands/slash-workflows) |
 
@@ -152,12 +152,12 @@
 | `claude auth logout` | 从 Anthropic 账户登出 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-auth-logout) |
 | `claude auth status` | 显示身份认证状态为 JSON | 🟡 轻微 | v2.1.183 | [查看](https://claude.aiso.cool/commands/cli-auth-status) |
 | `claude config` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-config) |
-| `claude daemon status` | 打印后台会话主管的状态 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-daemon-status) |
+| `claude daemon status` | 打印后台会话主管的状态 | 🟠 重大 | v2.1.183 | [查看](https://claude.aiso.cool/commands/cli-daemon-status) |
 | `claude doctor` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-doctor) |
 | `claude --help` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-help) |
 | `claude install` | 安装或重新安装本地二进制文件 | 🟡 轻微 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-install) |
 | `claude logs` | 打印后台会话的最近输出 | 🟡 轻微 | v2.1.183 | [查看](https://claude.aiso.cool/commands/cli-logs) |
-| `claude mcp` | 配置 MCP 服务器 | ⏳ 排队复核 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-mcp) |
+| `claude mcp` | 配置 MCP 服务器 | 🟠 重大 | v2.1.183 | [查看](https://claude.aiso.cool/commands/cli-mcp) |
 | `claude mcp add` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-mcp-add) |
 | `claude mcp add-from-claude-desktop` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-mcp-add-from-claude-desktop) |
 | `claude mcp add-json` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-mcp-add-json) |
