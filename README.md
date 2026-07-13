@@ -2,7 +2,7 @@
 
 ![Claude Code 命令大全 中文](https://claude.aiso.cool/api/og?type=home)
 
-![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-112%2F112-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--07--05-blue)
+![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-112%2F112-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--07--06-blue)
 
 > 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步,trust 数据(`112/112` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
 
@@ -338,4 +338,4 @@ Claude Code CLI 启动参数,跟在 `claude` 后面或写入配置文件。例�
 
 ---
 
-<sub>Last generated 2026-07-05 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
+<sub>Last generated 2026-07-06 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
