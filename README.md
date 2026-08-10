@@ -2,13 +2,13 @@
 
 ![Claude Code 命令大全 中文](https://claude.aiso.cool/api/og?type=home)
 
-![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-112%2F112-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--08--03-blue)
+![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-113%2F113-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--08--06-blue)
 
-> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步，trust 数据(`112/112` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
+> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步，trust 数据(`113/113` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
 
 本仓库整理 Claude Code 全部 slash 命令、CLI 子命令、Hook 事件、启动参数，所有内容来自深度核查项目 [claude.aiso.cool](https://claude.aiso.cool) — 每条命令带交叉核查 verdict、官方文档来源，且统一锚定到同一个 Claude Code 版本。
 
-当前收录 **253** 个命令，其中 **112** 个已完成 LLM 二阶段交叉核查（对照 docs.claude.com 官方源），通过率 **100%**。
+当前收录 **253** 个命令，其中 **113** 个已完成 LLM 二阶段交叉核查（对照 docs.claude.com 官方源），通过率 **100%**。
 
 ---
 
@@ -68,7 +68,7 @@
 | `/fast` | 切换快速模式的开启或关闭状态 | 🟢 通过 | v2.1.178 | [查看](https://claude.aiso.cool/commands/fast) |
 | `/feedback` | 提交反馈、报告错误或分享对话 | 🟢 通过 | v2.1.188 | [查看](https://claude.aiso.cool/commands/feedback) |
 | `/focus` | 切换焦点视图仅显示最后提示和工具摘要 | 🟢 通过 | v2.1.178 | [查看](https://claude.aiso.cool/commands/focus) |
-| `/fork` | 派生一个继承完整对话的后台 forked subagent 处理你的指令，你可继续手头工作，其结果完成后回传当前会话。需… | 🟢 通过 | v2.1.183 | [查看](https://claude.aiso.cool/commands/fork) |
+| `/fork` | 把当前对话复制进一个全新的后台会话（在 claude agents 里独占一行），继承到此刻为止的完整上下文，你在主会话… | 🟢 通过 | v2.1.222 | [查看](https://claude.aiso.cool/commands/fork) |
 | `/goal` | 设置目标使Claude持续工作直到条件满足 | 🟢 通过 | v2.1.178 | [查看](https://claude.aiso.cool/commands/goal) |
 | `/heapdump` | 写入堆快照和内存分解以诊断高内存使用 | 🟢 通过 | v2.1.179 | [查看](https://claude.aiso.cool/commands/heapdump) |
 | `/help` | 显示帮助信息和可用的所有命令 | 🟢 通过 | v2.1.195 | [查看](https://claude.aiso.cool/commands/help) |
@@ -85,7 +85,7 @@
 | `/mcp` | 管理MCP服务器连接和OAuth认证 | 🟢 通过 | v2.1.195 | [查看](https://claude.aiso.cool/commands/mcp) |
 | `/memory` | 编辑memory文件并管理自动memory功能 | 🟢 通过 | v2.1.178 | [查看](https://claude.aiso.cool/commands/memory) |
 | `/mobile` | 显示二维码下载Claude移动应用 | 🟢 通过 | v2.1.179 | [查看](https://claude.aiso.cool/commands/mobile) |
-| `/model` | 设置当前会话使用的AI模型 | 🟢 通过 | v2.1.195 | [查看](https://claude.aiso.cool/commands/model) |
+| `/model` | 设置当前会话使用的AI模型 | 🟢 通过 | v2.1.222 | [查看](https://claude.aiso.cool/commands/model) |
 | `/output-style` | — | — | — | [查看](https://claude.aiso.cool/commands/output-style) |
 | `/permissions` | 管理工具权限的允许、询问和拒绝规则 | 🟢 通过 | v2.1.193 | [查看](https://claude.aiso.cool/commands/permissions) |
 | `/plan` | 直接从提示进入计划模式执行任务 | 🟢 通过 | v2.1.179 | [查看](https://claude.aiso.cool/commands/plan) |
@@ -119,7 +119,7 @@
 | `/stats` | 打开统计标签显示使用情况 | 🟢 通过 | v2.1.183 | [查看](https://claude.aiso.cool/commands/stats) |
 | `/status` | 打开设置界面显示版本模型和连接 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/status) |
 | `/statusline` | 配置 Claude Code 的状态行显示信息 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/statusline) |
-| `/subtask` | — | — | — | [查看](https://claude.aiso.cool/commands/subtask) |
+| `/subtask` | 派生一个会话内 subagent，继承到此刻为止的完整对话在后台干活，完成后把结果回传当前会话。v2.1.212 新增—… | 🟢 通过 | v2.1.222 | [查看](https://claude.aiso.cool/commands/subtask) |
 | `/t` | 在当前 prompt 中临时禁用 thinking mode。 | — | — | [查看](https://claude.aiso.cool/commands/t) |
 | `/tasks` | 列出和管理后台任务及相关信息 | 🟢 通过 | v2.1.183 | [查看](https://claude.aiso.cool/commands/tasks) |
 | `/team-onboarding` | 从使用历史生成团队入门指南 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/team-onboarding) |
@@ -128,7 +128,7 @@
 | `/theme` | 更改终端配色主题和样式 | 🟢 通过 | v2.1.195 | [查看](https://claude.aiso.cool/commands/theme) |
 | `/todos` | — | — | — | [查看](https://claude.aiso.cool/commands/todos) |
 | `/tui` | 设置终端UI渲染器并重启会话 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/tui) |
-| `/ultraplan` | 在ultraplan会话中草稿计划 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/ultraplan) |
+| `/ultraplan` | [已于 v2.1.222 移除] 曾把规划阶段卸载到 Anthropic 云端容器生成计划草稿。changelog v2… | 🟢 通过 | v2.1.222 | [查看](https://claude.aiso.cool/commands/ultraplan) |
 | `/ultrareview` | 运行深层多agent代码审查 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/ultrareview) |
 | `/undo` | — | — | — | [查看](https://claude.aiso.cool/commands/undo) |
 | `/update` | 立即应用 Claude Code 的待装更新，等价于命令行 claude update，无需等待后台自动检查。 | 🟢 通过 | v2.1.187 | [查看](https://claude.aiso.cool/commands/update) |
@@ -355,4 +355,4 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 
 ---
 
-<sub>Last generated 2026-08-03 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
+<sub>Last generated 2026-08-06 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
