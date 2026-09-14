@@ -2,22 +2,22 @@
 
 ![Claude Code 命令大全 中文](https://claude.aiso.cool/api/og?type=home)
 
-![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-120%2F120-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--08--31-blue)
+![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-120%2F120-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--09--07-blue)
 
 > 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步，trust 数据(`120/120` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
 
 本仓库整理 Claude Code 全部 slash 命令、CLI 子命令、Hook 事件、启动参数，所有内容来自深度核查项目 [claude.aiso.cool](https://claude.aiso.cool) — 每条命令带交叉核查 verdict、官方文档来源，且统一锚定到同一个 Claude Code 版本。
 
-当前收录 **269** 个命令，其中 **120** 个已完成 LLM 二阶段交叉核查（对照 docs.claude.com 官方源），通过率 **100%**。
+当前收录 **272** 个命令，其中 **120** 个已完成 LLM 二阶段交叉核查（对照 docs.claude.com 官方源），通过率 **100%**。
 
 ---
 
 ## 目录
 
-- [Slash 命令(113)](#slash-命令)
+- [Slash 命令(114)](#slash-命令)
 - [CLI 子命令(44)](#cli-子命令)
 - [Hook 事件(30)](#hook-事件)
-- [启动参数(82)](#启动参数)
+- [启动参数(84)](#启动参数)
 - [本仓库 vs 网站](#本仓库-vs-网站)
 - [如何贡献](#如何贡献)
 - [License](#license)
@@ -119,6 +119,7 @@
 | `/setup-vertex` | 配置 Google Vertex AI 认证和模型 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/setup-vertex) |
 | `/share` | — | — | — | [查看](https://claude.aiso.cool/commands/share) |
 | `/simplify` | 独立 cleanup-only review skill：四个 review agent 并行检查代码复用、简化、效率与… | 🟢 通过 | v2.1.183 | [查看](https://claude.aiso.cool/commands/simplify) |
+| `/skill-doctor` | — | — | — | [查看](https://claude.aiso.cool/commands/skill-doctor) |
 | `/skills` | 列出可用 skills 和隐藏不需要的 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/skills) |
 | `/stats` | 打开统计标签显示使用情况 | 🟢 通过 | v2.1.183 | [查看](https://claude.aiso.cool/commands/stats) |
 | `/status` | 打开设置界面显示版本模型和连接 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/status) |
@@ -257,6 +258,7 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 | `--agent` | 为当前会话指定一个 agent（覆盖默认设置） | — | — | [查看](https://claude.aiso.cool/commands/flag-agent) |
 | `--agents` | 通过 JSON 动态定义自定义子 agent | — | — | [查看](https://claude.aiso.cool/commands/flag-agents) |
 | `--all` | 扩大命令作用范围到“全部”。claude agents --json --all 一并打印已完成的后台会话；claude… | — | — | [查看](https://claude.aiso.cool/commands/flag-all) |
+| `--append-subagent-system-prompt-file` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-append-subagent-system-prompt-file) |
 | `--append-system-prompt` | 在默认系统提示的末尾追加自定义文本 | — | — | [查看](https://claude.aiso.cool/commands/flag-append-system-prompt) |
 | `--ax-screen-reader` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-ax-screen-reader) |
 | `--background` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-background) |
@@ -311,6 +313,7 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 | `-p` | 通过 SDK 查询然后退出 | — | — | [查看](https://claude.aiso.cool/commands/flag-p) |
 | `--permission-mode` | 以指定的权限模式开始会话 | — | — | [查看](https://claude.aiso.cool/commands/flag-permission-mode) |
 | `--permission-prompt-tool` | 指定MCP工具处理非交互模式权限提示 | — | — | [查看](https://claude.aiso.cool/commands/flag-permission-prompt-tool) |
+| `--permission-prompts` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-permission-prompts) |
 | `--plugin-dir` | 从目录或ZIP存档加载插件 | — | — | [查看](https://claude.aiso.cool/commands/flag-plugin-dir) |
 | `--plugin-url` | 从URL获取插件ZIP存档 | — | — | [查看](https://claude.aiso.cool/commands/flag-plugin-url) |
 | `--print` | 打印响应而不使用交互模式 | — | — | [查看](https://claude.aiso.cool/commands/flag-print) |
@@ -371,4 +374,4 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 
 ---
 
-<sub>Last generated 2026-08-31 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
+<sub>Last generated 2026-09-07 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
