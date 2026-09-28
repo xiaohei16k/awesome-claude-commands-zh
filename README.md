@@ -2,13 +2,13 @@
 
 ![Claude Code 命令大全 中文](https://claude.aiso.cool/api/og?type=home)
 
-![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-130%2F130-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--09--19-blue)
+![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-145%2F145-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--09--22-blue)
 
-> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步，trust 数据(`130/130` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
+> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步，trust 数据(`145/145` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
 
 本仓库整理 Claude Code 全部 slash 命令、CLI 子命令、Hook 事件、启动参数，所有内容来自深度核查项目 [claude.aiso.cool](https://claude.aiso.cool) — 每条命令带交叉核查 verdict、官方文档来源，且统一锚定到同一个 Claude Code 版本。
 
-当前收录 **272** 个命令，其中 **130** 个已完成 LLM 二阶段交叉核查（对照 docs.claude.com 官方源），通过率 **100%**。
+当前收录 **272** 个命令，其中 **145** 个已完成 LLM 二阶段交叉核查（对照 docs.claude.com 官方源），通过率 **100%**。
 
 ---
 
@@ -96,7 +96,7 @@
 | `/plugin install` | — | — | — | [查看](https://claude.aiso.cool/commands/plugin-install) |
 | `/plugin list` | — | — | — | [查看](https://claude.aiso.cool/commands/plugin-list) |
 | `/plugins` | — | — | — | [查看](https://claude.aiso.cool/commands/plugins) |
-| `/poll` | Remote Control 的轮询命令，定期（现为每 10 分钟）拉取远程指令。 | 🟡 轻微 | v2.1.251 | [查看](https://claude.aiso.cool/commands/poll) |
+| `/poll` | Remote Control 的轮询命令，定期（现为每 10 分钟）拉取远程指令。 | 🟢 通过 | v2.1.251 | [查看](https://claude.aiso.cool/commands/poll) |
 | `/powerup` | 通过快速交互课程发现Claude Code功能 | 🟢 通过 | v2.1.179 | [查看](https://claude.aiso.cool/commands/powerup) |
 | `/proactive` | /loop 的别名，按设定间隔反复运行某个 prompt 或 slash 命令。 | 🟢 通过 | v2.1.251 | [查看](https://claude.aiso.cool/commands/proactive) |
 | `/radio` | 在浏览器中打开 Claude FM lo-fi 电台 | 🟢 通过 | v2.1.187 | [查看](https://claude.aiso.cool/commands/radio) |
@@ -162,7 +162,7 @@
 | `claude auth login` | 登录 Anthropic 账户 | 🟢 通过 | v2.1.187 | [查看](https://claude.aiso.cool/commands/cli-auth-login) |
 | `claude auth logout` | 从 Anthropic 账户登出 | 🟢 通过 | v2.1.181 | [查看](https://claude.aiso.cool/commands/cli-auth-logout) |
 | `claude auth status` | 显示身份认证状态为 JSON | 🟢 通过 | v2.1.183 | [查看](https://claude.aiso.cool/commands/cli-auth-status) |
-| `claude auto-mode reset` | 恢复自动模式（Auto Mode）为默认配置，清除用户设置中的自定义规则 | — | — | [查看](https://claude.aiso.cool/commands/cli-auto-mode-reset) |
+| `claude auto-mode reset` | 恢复自动模式（Auto Mode）为默认配置，清除用户设置中的自定义规则 | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-auto-mode-reset) |
 | `claude config` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-config) |
 | `claude daemon status` | 打印后台会话主管的状态 | 🟢 通过 | v2.1.187 | [查看](https://claude.aiso.cool/commands/cli-daemon-status) |
 | `claude doctor` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-doctor) |
@@ -179,29 +179,29 @@
 | `claude mcp logout` | 清除某个 MCP 服务器已存储的 OAuth 凭据，与 claude mcp login <name> 配对使用（v2.… | — | — | [查看](https://claude.aiso.cool/commands/cli-mcp-logout) |
 | `claude mcp remove` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-mcp-remove) |
 | `claude mcp serve` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-mcp-serve) |
-| `claude plugin` | 管理 Claude Code 插件 | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin) |
+| `claude plugin` | 管理 Claude Code 插件 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-plugin) |
 | `claude plugin details` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-details) |
 | `claude plugin disable` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-disable) |
 | `claude plugin enable` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-enable) |
-| `claude plugin eval` | 运行插件的 eval 测试套件，输出评分并生成可复现的评估结果 | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-eval) |
+| `claude plugin eval` | 运行插件的 eval 测试套件，输出评分并生成可复现的评估结果 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-plugin-eval) |
 | `claude plugin init` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-init) |
 | `claude plugin install` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-install) |
-| `claude plugin list` | 列出已安装插件及其在各配置范围下的启用/禁用状态，包括插件ID、版本、来源等信息 | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-list) |
+| `claude plugin list` | 列出已安装插件及其在各配置范围下的启用/禁用状态，包括插件ID、版本、来源等信息 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-plugin-list) |
 | `claude plugin marketplace remove` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-marketplace-remove) |
 | `claude plugin prune` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-prune) |
 | `claude plugin tag` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-tag) |
-| `claude plugin uninstall` | 卸载已安装的插件，可选保留数据目录、清理无用依赖或以 JSON 格式输出结果 | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-uninstall) |
+| `claude plugin uninstall` | 卸载已安装的插件，可选保留数据目录、清理无用依赖或以 JSON 格式输出结果 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-plugin-uninstall) |
 | `claude plugin update` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-update) |
 | `claude plugin validate` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-plugin-validate) |
-| `claude project purge` | 删除项目的所有本地 Claude Code 状态 | — | — | [查看](https://claude.aiso.cool/commands/cli-project-purge) |
+| `claude project purge` | 删除项目的所有本地 Claude Code 状态 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-project-purge) |
 | `claude rc` | — | — | — | [查看](https://claude.aiso.cool/commands/cli-rc) |
 | `claude remote-control` | 启动 Remote Control 服务器 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-remote-control) |
-| `claude respawn` | 重启后台会话 | 🟡 轻微 | v2.1.277 | [查看](https://claude.aiso.cool/commands/cli-respawn) |
+| `claude respawn` | 重启后台会话 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-respawn) |
 | `claude rm` | 从列表中移除后台会话 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-rm) |
 | `claude self-hosted-runner` | 启动运行程序进程，将本机或容器注册为自托管环境节点，在自有基础设施上托管 Claude Code 云会话 | 🟡 轻微 | v2.1.274 | [查看](https://claude.aiso.cool/commands/cli-self-hosted-runner) |
-| `claude setup-token` | 生成长期有效的 OAuth 令牌 | — | — | [查看](https://claude.aiso.cool/commands/cli-setup-token) |
+| `claude setup-token` | 生成长期有效的 OAuth 令牌 | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-setup-token) |
 | `claude stop` | 停止后台会话 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-stop) |
-| `claude ultrareview` | 非交互式运行代码审查，输出发现结果到标准输出 | — | — | [查看](https://claude.aiso.cool/commands/cli-ultrareview) |
+| `claude ultrareview` | 非交互式运行代码审查，输出发现结果到标准输出 | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-ultrareview) |
 | `claude update` | 更新到最新版本 | 🟢 通过 | v2.1.274 | [查看](https://claude.aiso.cool/commands/cli-update) |
 
 → [在线版 + 筛选 / 搜索](https://claude.aiso.cool/commands?kind=cli)
@@ -268,7 +268,7 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 | `--background` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-background) |
 | `--bare` | 最小化模式，跳过自动发现以加快脚本调用启动 | — | — | [查看](https://claude.aiso.cool/commands/flag-bare) |
 | `--base-dir` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-base-dir) |
-| `--bg` | 在后台启动会话并立即返回，打印会话 ID 和管理命令 | — | — | [查看](https://claude.aiso.cool/commands/flag-bg) |
+| `--bg` | 在后台启动会话并立即返回，打印会话 ID 和管理命令 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-bg) |
 | `-c` | 继续当前目录中最近的会话 | — | — | [查看](https://claude.aiso.cool/commands/flag-c) |
 | `--channels` | 指定 MCP 服务器通道，Claude 应在此会话中监听通知 | — | — | [查看](https://claude.aiso.cool/commands/flag-channels) |
 | `--chrome` | 启用 Chrome 浏览器集成以进行网络自动化和测试 | — | — | [查看](https://claude.aiso.cool/commands/flag-chrome) |
@@ -276,8 +276,8 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 | `--client-secret` | 用于 claude mcp add，配置 MCP 服务器的 OAuth 客户端密钥。 | — | — | [查看](https://claude.aiso.cool/commands/flag-client-secret) |
 | `-cn` | 搭配 claude --bg 使用，为后台会话设置会话名称。 | — | — | [查看](https://claude.aiso.cool/commands/flag-cn) |
 | `--console` | claude auth login 的子标志：改用 Anthropic Console 按 API 用量计费登录，而非 … | — | — | [查看](https://claude.aiso.cool/commands/flag-console) |
-| `--continue` | 加载当前目录中最近的对话（包括添加此目录的会话） | — | — | [查看](https://claude.aiso.cool/commands/flag-continue) |
-| `--dangerously-skip-permissions` | 跳过权限提示，等同于 --permission-mode bypassPermissions | — | — | [查看](https://claude.aiso.cool/commands/flag-dangerously-skip-permissions) |
+| `--continue` | 加载当前目录中最近的对话（包括添加此目录的会话） | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-continue) |
+| `--dangerously-skip-permissions` | 跳过权限提示，等同于 --permission-mode bypassPermissions | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-dangerously-skip-permissions) |
 | `--debug` | 启用调试模式并可选择性过滤类别 | — | — | [查看](https://claude.aiso.cool/commands/flag-debug) |
 | `--defer-shutdown-max-min` | 收到 SIGTERM 后延迟关闭，继续服务已连接的附加会话，达到指定分钟数后停放剩余会话并退出 | — | — | [查看](https://claude.aiso.cool/commands/flag-defer-shutdown-max-min) |
 | `--disable-slash-commands` | 禁用此会话的所有 Skill 和命令 | — | — | [查看](https://claude.aiso.cool/commands/flag-disable-slash-commands) |
@@ -301,14 +301,14 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 | `--maintenance` | 在会话前运行维护Setup hooks（仅打印模式） | — | — | [查看](https://claude.aiso.cool/commands/flag-maintenance) |
 | `--max-budget-usd` | 设置API调用的最大花费金额限制 | — | — | [查看](https://claude.aiso.cool/commands/flag-max-budget-usd) |
 | `--max-turns` | 限制Agent回合数（仅打印模式） | — | — | [查看](https://claude.aiso.cool/commands/flag-max-turns) |
-| `--mcp-config` | 从JSON文件或字符串加载MCP服务器 | — | — | [查看](https://claude.aiso.cool/commands/flag-mcp-config) |
+| `--mcp-config` | 从JSON文件或字符串加载MCP服务器 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-mcp-config) |
 | `--mcp-debug` | 启动时开启，输出 MCP 服务器错误的更多调试信息。 | — | — | [查看](https://claude.aiso.cool/commands/flag-mcp-debug) |
 | `--model` | 为当前会话设置模型 | — | — | [查看](https://claude.aiso.cool/commands/flag-model) |
 | `-n` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-n) |
 | `--name` | 设置会话显示名称 | — | — | [查看](https://claude.aiso.cool/commands/flag-name) |
 | `--no-browser` | claude mcp login 的子标志：SSH 等无浏览器环境下，打印授权 URL 而非自动开浏览器，再把回跳 UR… | — | — | [查看](https://claude.aiso.cool/commands/flag-no-browser) |
 | `--output-format` | 为打印模式指定输出格式 | — | — | [查看](https://claude.aiso.cool/commands/flag-output-format) |
-| `-p` | 通过 SDK 查询然后退出 | — | — | [查看](https://claude.aiso.cool/commands/flag-p) |
+| `-p` | 通过 SDK 查询然后退出 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-p) |
 | `--permission-mode` | 以指定的权限模式开始会话 | — | — | [查看](https://claude.aiso.cool/commands/flag-permission-mode) |
 | `--permission-prompt-tool` | 指定MCP工具处理非交互模式权限提示 | — | — | [查看](https://claude.aiso.cool/commands/flag-permission-prompt-tool) |
 | `--permission-prompts` | 设置打印模式下由谁回答权限提示，可设为 none 以在无人值守场景下自动拒绝所有交互式提示 | — | — | [查看](https://claude.aiso.cool/commands/flag-permission-prompts) |
@@ -321,7 +321,7 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 | `--remote-control-session-name-prefix` | 设置Remote Control会话名称前缀 | — | — | [查看](https://claude.aiso.cool/commands/flag-remote-control-session-name-prefix) |
 | `--remove-session-state` | 会话结束时自动删除该会话对应的会话状态目录 | — | — | [查看](https://claude.aiso.cool/commands/flag-remove-session-state) |
 | `--replay-user-messages` | 重新发出stdin中的用户消息到stdout进行确认 | — | — | [查看](https://claude.aiso.cool/commands/flag-replay-user-messages) |
-| `--resume` | 恢复特定会话或显示交互式会话选择器 | — | — | [查看](https://claude.aiso.cool/commands/flag-resume) |
+| `--resume` | 恢复特定会话或显示交互式会话选择器 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-resume) |
 | `--safe-mode` | 以“全部自定义项禁用”方式启动，排查损坏的配置：CLAUDE.md、skills、plugins、hooks、MCP s… | — | — | [查看](https://claude.aiso.cool/commands/flag-safe-mode) |
 | `--session-id` | 为对话使用特定的会话ID | — | — | [查看](https://claude.aiso.cool/commands/flag-session-id) |
 | `--setting-sources` | 指定要加载的设置源列表 | — | — | [查看](https://claude.aiso.cool/commands/flag-setting-sources) |
@@ -335,7 +335,7 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 | `--tools` | 限制Claude可以使用的内置工具 | — | — | [查看](https://claude.aiso.cool/commands/flag-tools) |
 | `--use-anthropic-git-proxy` | 通过 Anthropic 提供的 git 代理克隆仓库 | — | — | [查看](https://claude.aiso.cool/commands/flag-use-anthropic-git-proxy) |
 | `-w` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-w) |
-| `--worktree` | 在隔离的git worktree中启动Claude | — | — | [查看](https://claude.aiso.cool/commands/flag-worktree) |
+| `--worktree` | 在隔离的git worktree中启动Claude | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-worktree) |
 | `-y` | 在执行 `claude plugin install`/`update` 时跳过确认提示，自动确认 | — | — | [查看](https://claude.aiso.cool/commands/flag-y) |
 | `--yes` | 跳过命令执行前的确认提示（如与「claude auto-mode reset」搭配使用） | — | — | [查看](https://claude.aiso.cool/commands/flag-yes) |
 
@@ -374,4 +374,4 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 
 ---
 
-<sub>Last generated 2026-09-19 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
+<sub>Last generated 2026-09-22 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
