@@ -2,22 +2,22 @@
 
 ![Claude Code 命令大全 中文](https://claude.aiso.cool/api/og?type=home)
 
-![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-145%2F145-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--09--22-blue)
+![已核查](https://img.shields.io/badge/%E5%B7%B2%E6%A0%B8%E6%9F%A5-163%2F163-brightgreen) ![通过来源核验](https://img.shields.io/badge/%E9%80%9A%E8%BF%87%E6%9D%A5%E6%BA%90%E6%A0%B8%E9%AA%8C-100%25-brightgreen) ![锚定](https://img.shields.io/badge/%E9%94%9A%E5%AE%9A-%E5%A4%9A%E7%89%88%E6%9C%AC-orange) ![最新同步](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E5%90%8C%E6%AD%A5-2026--09--28-blue)
 
-> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步，trust 数据(`145/145` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
+> 本 README 每周自动从 [claude.aiso.cool](https://claude.aiso.cool) 同步，trust 数据(`163/163` · `100%`)实时反映核查状态。同步流水线见 [`.github/workflows/sync.yml`](https://github.com/xiaohei16k/awesome-claude-commands-zh/blob/main/.github/workflows/sync.yml)。
 
 本仓库整理 Claude Code 全部 slash 命令、CLI 子命令、Hook 事件、启动参数，所有内容来自深度核查项目 [claude.aiso.cool](https://claude.aiso.cool) — 每条命令带交叉核查 verdict、官方文档来源，且统一锚定到同一个 Claude Code 版本。
 
-当前收录 **272** 个命令，其中 **145** 个已完成 LLM 二阶段交叉核查（对照 docs.claude.com 官方源），通过率 **100%**。
+当前收录 **280** 个命令，其中 **163** 个已完成 LLM 二阶段交叉核查（对照 docs.claude.com 官方源），通过率 **100%**。
 
 ---
 
 ## 目录
 
-- [Slash 命令(114)](#slash-命令)
+- [Slash 命令(115)](#slash-命令)
 - [CLI 子命令(47)](#cli-子命令)
-- [Hook 事件(30)](#hook-事件)
-- [启动参数(81)](#启动参数)
+- [Hook 事件(31)](#hook-事件)
+- [启动参数(87)](#启动参数)
 - [本仓库 vs 网站](#本仓库-vs-网站)
 - [如何贡献](#如何贡献)
 - [License](#license)
@@ -33,6 +33,7 @@
 | `/add-dir` | 为当前会话添加工作目录以用于文件访问 | 🟢 通过 | v2.1.195 | [查看](https://claude.aiso.cool/commands/add-dir) |
 | `/advisor` | 开关 advisor 工具——在任务关键时刻咨询第二个模型获取指导。接受 opus / sonnet / fable（v… | 🟢 通过 | v2.1.183 | [查看](https://claude.aiso.cool/commands/advisor) |
 | `/approved-tools` | — | — | — | [查看](https://claude.aiso.cool/commands/approved-tools) |
+| `/artifacts` | 列出你拥有或与你共享的 artifacts，可在当前会话中附加、用浏览器打开或复制链接 | 🟡 轻微 | v2.1.280 | [查看](https://claude.aiso.cool/commands/artifacts) |
 | `/autocompact` | 设置上下文占用达到多少比例（或多少 token）时触发自动压缩 | 🟡 轻微 | v2.1.276 | [查看](https://claude.aiso.cool/commands/autocompact) |
 | `/autofix-pr` | 启动远程会话自动修复 PR 中的 CI 失败 | 🟢 通过 | v2.1.178 | [查看](https://claude.aiso.cool/commands/autofix-pr) |
 | `/background` | 将当前会话后台运行并释放当前终端 | 🟢 通过 | v2.1.195 | [查看](https://claude.aiso.cool/commands/background) |
@@ -200,7 +201,7 @@
 | `claude rm` | 从列表中移除后台会话 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-rm) |
 | `claude self-hosted-runner` | 启动运行程序进程，将本机或容器注册为自托管环境节点，在自有基础设施上托管 Claude Code 云会话 | 🟡 轻微 | v2.1.274 | [查看](https://claude.aiso.cool/commands/cli-self-hosted-runner) |
 | `claude setup-token` | 生成长期有效的 OAuth 令牌 | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-setup-token) |
-| `claude stop` | 停止后台会话 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-stop) |
+| `claude stop` | 停止后台会话 | 🟢 通过 | v2.1.280 | [查看](https://claude.aiso.cool/commands/cli-stop) |
 | `claude ultrareview` | 非交互式运行代码审查，输出发现结果到标准输出 | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/cli-ultrareview) |
 | `claude update` | 更新到最新版本 | 🟢 通过 | v2.1.274 | [查看](https://claude.aiso.cool/commands/cli-update) |
 
@@ -220,6 +221,7 @@
 | `Elicitation` | 在 MCP 服务器于工具调用中请求用户输入时触发，可拦截并覆盖 elicitation 响应。 | — | — | [查看](https://claude.aiso.cool/commands/hook-elicitation) |
 | `ElicitationResult` | 在用户回应 MCP elicitation、响应回传之前触发，用于处理 elicitation 结果。 | — | — | [查看](https://claude.aiso.cool/commands/hook-elicitationresult) |
 | `FileChanged` | 在被监视的文件发生改变时触发，用于反应式地管理环境。 | — | — | [查看](https://claude.aiso.cool/commands/hook-filechanged) |
+| `hook_execution_complete` | 记录 hook 执行完成时的 OpenTelemetry 遥测事件，包含输出大小及超大输出次数等信息 | — | — | [查看](https://claude.aiso.cool/commands/hook-hook-execution-complete) |
 | `InstructionsLoaded` | 在 CLAUDE.md 或 .claude/rules/*.md 文件加载进上下文时触发。 | — | — | [查看](https://claude.aiso.cool/commands/hook-instructionsloaded) |
 | `MessageDisplay` | 在助手消息文本即将显示时触发，允许转换或隐藏该文本（仅展示、不阻断）。 | — | — | [查看](https://claude.aiso.cool/commands/hook-messagedisplay) |
 | `Notification` | 在 Claude Code 发送通知时触发（支持 matcher 匹配通知类型）。 | — | — | [查看](https://claude.aiso.cool/commands/hook-notification) |
@@ -257,33 +259,37 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 
 | 命令 | 简介 | 核查结论 | 锚定版本 | 详情 |
 | --- | --- | --- | --- | --- |
-| `--add-dir` | 为 Claude 添加额外的工作目录以读写文件 | — | — | [查看](https://claude.aiso.cool/commands/flag-add-dir) |
+| `--add-dir` | 为 Claude 添加额外的工作目录以读写文件 | 🟡 轻微 | v2.1.280 | [查看](https://claude.aiso.cool/commands/flag-add-dir) |
 | `--agent` | 为当前会话指定一个 agent（覆盖默认设置） | — | — | [查看](https://claude.aiso.cool/commands/flag-agent) |
-| `--agents` | 通过 JSON 动态定义自定义子 agent | — | — | [查看](https://claude.aiso.cool/commands/flag-agents) |
+| `--agents` | 通过 JSON 动态定义自定义子 agent | 🟡 轻微 | v2.1.283 | [查看](https://claude.aiso.cool/commands/flag-agents) |
 | `--all` | 扩大命令作用范围到“全部”。claude agents --json --all 一并打印已完成的后台会话；claude… | — | — | [查看](https://claude.aiso.cool/commands/flag-all) |
 | `--allow-dangerously-skip-permissions` | 在权限模式循环中添加跳过权限检查选项 | — | — | [查看](https://claude.aiso.cool/commands/flag-allow-dangerously-skip-permissions) |
+| `--allowedTools` | 设定无需询问权限即可执行的 Tool 列表 | — | — | [查看](https://claude.aiso.cool/commands/flag-allowedtools) |
 | `--append-subagent-system-prompt-file` | 从文件读取文本并附加到子代理的系统提示，用于内容过长无法在命令行传递的场景，仅在非交互模式下生效 | — | — | [查看](https://claude.aiso.cool/commands/flag-append-subagent-system-prompt-file) |
-| `--append-system-prompt` | 在默认系统提示的末尾追加自定义文本 | — | — | [查看](https://claude.aiso.cool/commands/flag-append-system-prompt) |
-| `--ax-screen-reader` | 以屏幕阅读器友好方式输出：纯文本、无装饰边框和动画 | — | — | [查看](https://claude.aiso.cool/commands/flag-ax-screen-reader) |
+| `--append-system-prompt` | 在默认系统提示的末尾追加自定义文本 | 🟡 轻微 | v2.1.283 | [查看](https://claude.aiso.cool/commands/flag-append-system-prompt) |
+| `--append-system-prompt-file` | 从文件加载系统提示文本并追加到默认提示 | — | — | [查看](https://claude.aiso.cool/commands/flag-append-system-prompt-file) |
+| `--ax-screen-reader` | 以屏幕阅读器友好方式输出：纯文本、无装饰边框和动画 | 🟢 通过 | v2.1.283 | [查看](https://claude.aiso.cool/commands/flag-ax-screen-reader) |
 | `--background` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-background) |
-| `--bare` | 最小化模式，跳过自动发现以加快脚本调用启动 | — | — | [查看](https://claude.aiso.cool/commands/flag-bare) |
+| `--bare` | 最小化模式，跳过自动发现以加快脚本调用启动 | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-bare) |
 | `--base-dir` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-base-dir) |
 | `--bg` | 在后台启动会话并立即返回，打印会话 ID 和管理命令 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-bg) |
 | `-c` | 继续当前目录中最近的会话 | — | — | [查看](https://claude.aiso.cool/commands/flag-c) |
-| `--channels` | 指定 MCP 服务器通道，Claude 应在此会话中监听通知 | — | — | [查看](https://claude.aiso.cool/commands/flag-channels) |
+| `--channels` | 指定 MCP 服务器通道，Claude 应在此会话中监听通知 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-channels) |
 | `--chrome` | 启用 Chrome 浏览器集成以进行网络自动化和测试 | — | — | [查看](https://claude.aiso.cool/commands/flag-chrome) |
 | `--client-id` | 用于 claude mcp add，配置 MCP 服务器的 OAuth 客户端 ID。 | — | — | [查看](https://claude.aiso.cool/commands/flag-client-id) |
 | `--client-secret` | 用于 claude mcp add，配置 MCP 服务器的 OAuth 客户端密钥。 | — | — | [查看](https://claude.aiso.cool/commands/flag-client-secret) |
 | `-cn` | 搭配 claude --bg 使用，为后台会话设置会话名称。 | — | — | [查看](https://claude.aiso.cool/commands/flag-cn) |
+| `--configure-git` | 为 self-hosted runner 配置克隆/提交所用的 Git 认证凭据（含提交签名） | — | — | [查看](https://claude.aiso.cool/commands/flag-configure-git) |
 | `--console` | claude auth login 的子标志：改用 Anthropic Console 按 API 用量计费登录，而非 … | — | — | [查看](https://claude.aiso.cool/commands/flag-console) |
 | `--continue` | 加载当前目录中最近的对话（包括添加此目录的会话） | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-continue) |
-| `--dangerously-skip-permissions` | 跳过权限提示，等同于 --permission-mode bypassPermissions | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-dangerously-skip-permissions) |
+| `--dangerously-skip-permissions` | 跳过权限提示，等同于 --permission-mode bypassPermissions | 🟢 通过 | v2.1.281 | [查看](https://claude.aiso.cool/commands/flag-dangerously-skip-permissions) |
 | `--debug` | 启用调试模式并可选择性过滤类别 | — | — | [查看](https://claude.aiso.cool/commands/flag-debug) |
+| `--debug-file` | 将调试日志写入指定文件路径 | — | — | [查看](https://claude.aiso.cool/commands/flag-debug-file) |
 | `--defer-shutdown-max-min` | 收到 SIGTERM 后延迟关闭，继续服务已连接的附加会话，达到指定分钟数后停放剩余会话并退出 | — | — | [查看](https://claude.aiso.cool/commands/flag-defer-shutdown-max-min) |
 | `--disable-slash-commands` | 禁用此会话的所有 Skill 和命令 | — | — | [查看](https://claude.aiso.cool/commands/flag-disable-slash-commands) |
 | `--disabled` | 用于 /plugin list，过滤只显示已禁用的插件。 | — | — | [查看](https://claude.aiso.cool/commands/flag-disabled) |
 | `--disallowedTools` | 拒绝规则，从模型上下文中移除 Tool 或拒绝特定匹配 | — | — | [查看](https://claude.aiso.cool/commands/flag-disallowedtools) |
-| `--effort` | 为当前会话设置处理难度级别（low/medium/high/xhigh/max） | — | — | [查看](https://claude.aiso.cool/commands/flag-effort) |
+| `--effort` | 为当前会话设置处理难度级别（low/medium/high/xhigh/max） | 🟡 轻微 | v2.1.280 | [查看](https://claude.aiso.cool/commands/flag-effort) |
 | `--enabled` | 用于 /plugin list，过滤只显示已启用的插件。 | — | — | [查看](https://claude.aiso.cool/commands/flag-enabled) |
 | `--exclude-dynamic-system-prompt-sections` | 将每台机器的系统提示部分移至第一条用户消息，改善缓存重用 | — | — | [查看](https://claude.aiso.cool/commands/flag-exclude-dynamic-system-prompt-sections) |
 | `--exec` | 把一条 shell 命令作为 PTY 支持的后台作业运行，而非启动 Claude 会话。须与 --bg 配合从 shel… | — | — | [查看](https://claude.aiso.cool/commands/flag-exec) |
@@ -295,39 +301,41 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 | `--include-partial-messages` | 在输出中包含部分流事件 | — | — | [查看](https://claude.aiso.cool/commands/flag-include-partial-messages) |
 | `--init` | 在会话前运行Setup hooks（仅打印模式） | — | — | [查看](https://claude.aiso.cool/commands/flag-init) |
 | `--init-only` | 运行Setup和SessionStart hooks后退出 | — | — | [查看](https://claude.aiso.cool/commands/flag-init-only) |
-| `--input-format` | 为打印模式指定输入格式 | — | — | [查看](https://claude.aiso.cool/commands/flag-input-format) |
-| `--json` | 以 JSON 数组打印会话/结果供脚本消费。claude agents 下列出活动后台会话（加 --all 含已完成），… | — | — | [查看](https://claude.aiso.cool/commands/flag-json) |
+| `--input-format` | 为打印模式指定输入格式 | 🟡 轻微 | v2.1.283 | [查看](https://claude.aiso.cool/commands/flag-input-format) |
+| `--json` | 以 JSON 数组打印会话/结果供脚本消费。claude agents 下列出活动后台会话（加 --all 含已完成），… | 🟡 轻微 | v2.1.283 | [查看](https://claude.aiso.cool/commands/flag-json) |
 | `--json-schema` | 获取与JSON Schema匹配的验证JSON输出 | — | — | [查看](https://claude.aiso.cool/commands/flag-json-schema) |
 | `--maintenance` | 在会话前运行维护Setup hooks（仅打印模式） | — | — | [查看](https://claude.aiso.cool/commands/flag-maintenance) |
 | `--max-budget-usd` | 设置API调用的最大花费金额限制 | — | — | [查看](https://claude.aiso.cool/commands/flag-max-budget-usd) |
 | `--max-turns` | 限制Agent回合数（仅打印模式） | — | — | [查看](https://claude.aiso.cool/commands/flag-max-turns) |
 | `--mcp-config` | 从JSON文件或字符串加载MCP服务器 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-mcp-config) |
 | `--mcp-debug` | 启动时开启，输出 MCP 服务器错误的更多调试信息。 | — | — | [查看](https://claude.aiso.cool/commands/flag-mcp-debug) |
-| `--model` | 为当前会话设置模型 | — | — | [查看](https://claude.aiso.cool/commands/flag-model) |
+| `--model` | 为当前会话设置模型 | 🟢 通过 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-model) |
 | `-n` | — | — | — | [查看](https://claude.aiso.cool/commands/flag-n) |
 | `--name` | 设置会话显示名称 | — | — | [查看](https://claude.aiso.cool/commands/flag-name) |
 | `--no-browser` | claude mcp login 的子标志：SSH 等无浏览器环境下，打印授权 URL 而非自动开浏览器，再把回跳 UR… | — | — | [查看](https://claude.aiso.cool/commands/flag-no-browser) |
-| `--output-format` | 为打印模式指定输出格式 | — | — | [查看](https://claude.aiso.cool/commands/flag-output-format) |
+| `--output-format` | 为打印模式指定输出格式 | 🟡 轻微 | v2.1.282 | [查看](https://claude.aiso.cool/commands/flag-output-format) |
 | `-p` | 通过 SDK 查询然后退出 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-p) |
-| `--permission-mode` | 以指定的权限模式开始会话 | — | — | [查看](https://claude.aiso.cool/commands/flag-permission-mode) |
+| `--permission-mode` | 以指定的权限模式开始会话 | 🟡 轻微 | v2.1.280 | [查看](https://claude.aiso.cool/commands/flag-permission-mode) |
 | `--permission-prompt-tool` | 指定MCP工具处理非交互模式权限提示 | — | — | [查看](https://claude.aiso.cool/commands/flag-permission-prompt-tool) |
 | `--permission-prompts` | 设置打印模式下由谁回答权限提示，可设为 none 以在无人值守场景下自动拒绝所有交互式提示 | — | — | [查看](https://claude.aiso.cool/commands/flag-permission-prompts) |
-| `--plugin-dir` | 从目录或ZIP存档加载插件 | — | — | [查看](https://claude.aiso.cool/commands/flag-plugin-dir) |
+| `--plugin-dir` | 从目录或ZIP存档加载插件 | 🟢 通过 | v2.1.281 | [查看](https://claude.aiso.cool/commands/flag-plugin-dir) |
 | `--plugin-url` | 从URL获取插件ZIP存档 | — | — | [查看](https://claude.aiso.cool/commands/flag-plugin-url) |
-| `--print` | 打印响应而不使用交互模式 | — | — | [查看](https://claude.aiso.cool/commands/flag-print) |
+| `--print` | 打印响应而不使用交互模式 | 🟡 轻微 | v2.1.283 | [查看](https://claude.aiso.cool/commands/flag-print) |
 | `--proxy-authorization-command` | 指定一条命令，其输出用于为出口代理生成 Proxy-Authorization 请求头 | — | — | [查看](https://claude.aiso.cool/commands/flag-proxy-authorization-command) |
 | `--proxy-authorization-file` | 指定一个文件，其内容用于为出口代理生成 Proxy-Authorization 请求头 | — | — | [查看](https://claude.aiso.cool/commands/flag-proxy-authorization-file) |
 | `--remote-control` | 启动启用Remote Control的交互式会话 | — | — | [查看](https://claude.aiso.cool/commands/flag-remote-control) |
 | `--remote-control-session-name-prefix` | 设置Remote Control会话名称前缀 | — | — | [查看](https://claude.aiso.cool/commands/flag-remote-control-session-name-prefix) |
 | `--remove-session-state` | 会话结束时自动删除该会话对应的会话状态目录 | — | — | [查看](https://claude.aiso.cool/commands/flag-remove-session-state) |
 | `--replay-user-messages` | 重新发出stdin中的用户消息到stdout进行确认 | — | — | [查看](https://claude.aiso.cool/commands/flag-replay-user-messages) |
-| `--resume` | 恢复特定会话或显示交互式会话选择器 | 🟡 轻微 | v2.1.278 | [查看](https://claude.aiso.cool/commands/flag-resume) |
+| `--resume` | 恢复特定会话或显示交互式会话选择器 | 🟢 通过 | v2.1.281 | [查看](https://claude.aiso.cool/commands/flag-resume) |
+| `--retire-at` | 为 self-hosted runner 指定退役时间点，到点后停止接新任务并优雅释放正在处理的会话 | — | — | [查看](https://claude.aiso.cool/commands/flag-retire-at) |
 | `--safe-mode` | 以“全部自定义项禁用”方式启动，排查损坏的配置：CLAUDE.md、skills、plugins、hooks、MCP s… | — | — | [查看](https://claude.aiso.cool/commands/flag-safe-mode) |
+| `--scope` | 指定 claude plugin 相关命令（install/update/enable/disable）的作用范围：us… | — | — | [查看](https://claude.aiso.cool/commands/flag-scope) |
 | `--session-id` | 为对话使用特定的会话ID | — | — | [查看](https://claude.aiso.cool/commands/flag-session-id) |
-| `--setting-sources` | 指定要加载的设置源列表 | — | — | [查看](https://claude.aiso.cool/commands/flag-setting-sources) |
-| `--settings` | 指定设置JSON文件或内联JSON字符串 | — | — | [查看](https://claude.aiso.cool/commands/flag-settings) |
+| `--setting-sources` | 指定要加载的设置源列表 | 🟢 通过 | v2.1.283 | [查看](https://claude.aiso.cool/commands/flag-setting-sources) |
+| `--settings` | 指定设置JSON文件或内联JSON字符串 | 🟢 通过 | v2.1.283 | [查看](https://claude.aiso.cool/commands/flag-settings) |
 | `--strict-mcp-config` | 仅使用指定的MCP服务器配置忽略其他配置 | — | — | [查看](https://claude.aiso.cool/commands/flag-strict-mcp-config) |
-| `--system-prompt` | 用自定义文本替换整个系统提示 | — | — | [查看](https://claude.aiso.cool/commands/flag-system-prompt) |
+| `--system-prompt` | 用自定义文本替换整个系统提示 | 🟡 轻微 | v2.1.283 | [查看](https://claude.aiso.cool/commands/flag-system-prompt) |
 | `--system-prompt-file` | 从文件加载系统提示替换默认值 | — | — | [查看](https://claude.aiso.cool/commands/flag-system-prompt-file) |
 | `--system-prompt-snapshot` | 控制系统提示的渲染方式；设为 off 时每次请求都重新渲染系统提示，而不是复用会话记录中已保存的提示 | — | — | [查看](https://claude.aiso.cool/commands/flag-system-prompt-snapshot) |
 | `--teleport` | 在本地终端中恢复web会话 | — | — | [查看](https://claude.aiso.cool/commands/flag-teleport) |
@@ -374,4 +382,4 @@ Claude Code CLI 启动参数，跟在 `claude` 后面或写入配置文件。例
 
 ---
 
-<sub>Last generated 2026-09-22 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
+<sub>Last generated 2026-09-28 · Aligned to multiple versions · Powered by [claude.aiso.cool](https://claude.aiso.cool)</sub>
